@@ -21,7 +21,7 @@ A terminal user interface (TUI) app for backing up and restoring Raspberry Pi SD
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/pi-backup-tool.git
+git clone https://github.com/shasb/pi-backup-tool.git
 cd pi-backup-tool
 
 # Install dependencies
