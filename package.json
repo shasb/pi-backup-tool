@@ -1,0 +1,38 @@
+{
+  "name": "pi-backup-tool",
+  "version": "1.0.0",
+  "description": "TUI app for backing up Raspberry Pi SD cards with dd and pishrink",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "pi-backup": "./dist/index.js"
+  },
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "build": "babel src -d dist && echo '#!/usr/bin/env node' | cat - dist/index.js > dist/tmp && mv dist/tmp dist/index.js && chmod +x dist/index.js",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "raspberry-pi",
+    "backup",
+    "tui",
+    "dd",
+    "pishrink"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ink": "^6.6.0",
+    "ink-select-input": "^6.2.0",
+    "ink-spinner": "^5.0.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^19.2.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/node": "^7.29.0",
+    "@babel/preset-react": "^7.28.5"
+  }
+}

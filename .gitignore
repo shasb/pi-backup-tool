@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output (optional - include if you want users to build themselves)
+# dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Backup images (don't commit actual backups!)
+*.img
+*.img.gz
+*.iso
